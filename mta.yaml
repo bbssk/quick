@@ -123,6 +123,15 @@ resources:
   type: org.cloudfoundry.managed-service
   parameters:
     config:
+      role-collections:
+      - description: generated
+        name: support-quick-${org}-${space}
+        role-template-references:
+        - $XSAPPNAME.support
+      - description: generated
+        name: admin-quick-${org}-${space}
+        role-template-references:
+        - $XSAPPNAME.admin
       tenant-mode: dedicated
       xsappname: quick-${org}-${space}
     path: ./xs-security.json
