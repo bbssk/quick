@@ -85,6 +85,7 @@ resources:
   parameters:
     service: hana
     service-plan: hdi-shared
+    service-key:  quick-db-key
 - name: quick-destination-service
   type: org.cloudfoundry.managed-service
   parameters:
