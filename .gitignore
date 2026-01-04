@@ -3,7 +3,7 @@ _out
 *.db
 *.sqlite
 connection.properties
-default-*.json
+#default-*.json
 .cdsrc-private.json
 gen/
 node_modules/
@@ -34,3 +34,4 @@ mta_archives/
 @cds-models
 dist
 resources
+package-lock.json
