@@ -9,6 +9,9 @@ modules:
   requires:
   - name: quick-db
   - name: uaa_quick
+  - name: quick_autoscaler #autoscaler
+    parameters:
+       path: './policy.json'
   provides:
   - name: srv-api
     properties:
@@ -113,6 +116,14 @@ resources:
     service-plan: lite
   requires:
   - name: srv-api
+#autoscaler
+- name: quick_autoscaler
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: autoscaler
+    service-name: quick-autoscaler-instance
+    service-plan: standard
+    service-key: quick-autoscaler-instance-key
 - name: quick_html_repo_host
   type: org.cloudfoundry.managed-service
   parameters:
