@@ -50,7 +50,7 @@
       "https://*.cfapps.us10-001.hana.ondemand.com/login/callback",
       "https://*.cfapps.us10.hana.ondemand.com/login/callback",
       "http://localhost:5000/login/callback",
-      "https://*.us10.applicationstudio.cloud.sap/login/callback"
+      "https://*.us10.trial.applicationstudio.cloud.sap/login/callback"
     ]
   }
 }
